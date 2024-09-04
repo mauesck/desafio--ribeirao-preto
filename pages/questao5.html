@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 - Lâmpadas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row vh-100 d-flex justify-content-center align-items-center text-center">
+            <div class="col-12 col-sm-10 text-center fs-5">
+                <details class="border fs-6 m-2 p-2">
+                    <summary>Enunciado da Questão</summary>
+                    5- Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas
+                    diferentes. Você não pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os
+                    interruptores quantas vezes quiser. Seu objetivo é descobrir qual interruptor controla qual lâmpada.
+                    Como você faria para descobrir, usando apenas duas idas até uma das salas das lâmpadas, qual
+                    interruptor controla cada lâmpada?  
+                </details>
+
+                <div class="m-4">
+                    Eu fiquei verdadeiramente em dúvida quanto ao enunciado por conta da frase "duas idas até uma das
+                    salas" que está no singular e por isso separei em 2 casos.
+                </div>
+
+                <details class="m-2 p-2 border">
+                    <summary>Caso 1</summary>
+                    Primeiramente eu classificaria os interruptores e as lâmpadas, como: interruptor 1, 2 e 3 e salas 1,
+                    2 e 3, e então seguiria os seguintes passos.
+                    <br><br>
+                    <ol class="text-start fs-5">
+                        <li>Ligar o interruptor 1 e deixar ligado por 10 minutos ou mais;</li>
+                        <li>Desligar o interruptor 1 e ligar o interruptor 2;</li>
+                        <li>Ir até uma das salas;</li>
+                        <li>Verificar o "estado" da Lâmpada:</li>
+                        <ul>
+                            <li>Acesa: Lâmpada 2, pertence ao interruptor 2;</li>
+                            <li>Desligada e Quente: Lâmpada 1, pertence ao interruptor 1;</li>
+                            <li>Desligada e Fria: Lâmpada 3, pertence ao interruptor 3;</li>
+                        </ul>
+                        <li>Agora basta ir até uma das outras salas e verificar o estado da Lâmpada, desta maneira
+                            poderá atribuí-la a um dos interruptores, e desta forma checando os estados das lâmpadas
+                            poderemos atribui-las a todos os interruptores.</li>
+                    </ol>
+                </details>
+
+                <details class="m-2 p-2 border">
+                    <summary>Caso 2</summary>
+                    Neste caso considerando que a frase "duas idas até uma das salas" está no singular e isso implica
+                    que eu posso fazer duas idas apenas na (mesma) sala. A resposta seria que não teria como atribuir
+                    todos
+                    os interruptores as suas lampadas pois para fazer a atribuição de todos eles eu precisaria fazer
+                    duas idas em duas salas diferentes e não duas idas em apenas uma das salas.
+                </details>
+            </div>
+            <a href="../index.html">Voltar</a>
+        </div>
+    </div>
+</body>
+
+</html>
